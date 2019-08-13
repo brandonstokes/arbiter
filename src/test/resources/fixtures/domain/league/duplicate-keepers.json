@@ -1,0 +1,7 @@
+{
+  "rounds": 1,
+  "members": [
+    {"name": "member 1", "firstKeeper": {"id": 1, "name": "keeper", "round": 1}, "secondKeeper": null},
+    {"name": "member 2", "firstKeeper": {"id": 1, "name": "keeper", "round": 2}, "secondKeeper": null}
+  ]
+}

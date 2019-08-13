@@ -1,0 +1,5 @@
+{
+  "name": "a",
+  "firstKeeper": {"id": 1, "name": "aa", "round": 1, "penalty": 3},
+  "secondKeeper": {"id": 2, "name": "bb", "round": 3, "penalty": 5}
+}

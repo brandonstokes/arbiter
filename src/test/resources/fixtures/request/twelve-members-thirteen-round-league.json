@@ -1,0 +1,165 @@
+{
+  "rounds": "13",
+  "members": [
+    {
+      "name": "a",
+      "firstKeeper": {
+        "id": 1,
+        "name": "first keeper [a]",
+        "round": 6,
+        "penalty": 8
+      },
+      "secondKeeper": {
+        "id": 2,
+        "name": "second keeper [a]",
+        "round": 10,
+        "penalty": null
+      }
+    },
+    {
+      "name": "b",
+      "firstKeeper": {
+        "id": 9,
+        "name": "first keeper [b]",
+        "round": 8,
+        "penalty": null
+      },
+      "secondKeeper": {
+        "id": 10,
+        "name": "second keeper [b]",
+        "round": 10,
+        "penalty": null
+      }
+    },
+    {
+      "name": "c",
+      "firstKeeper": {
+        "id": 99,
+        "name": "first keeper [c]",
+        "round": 9,
+        "penalty": 10
+      },
+      "secondKeeper": {
+        "id": 100,
+        "name": "second keeper [c]",
+        "round": 4,
+        "penalty": 6
+      }
+    },
+    {
+      "name": "d",
+      "firstKeeper": {
+        "id": 150,
+        "name": "first keeper [d]",
+        "round": 10,
+        "penalty": null
+      },
+      "secondKeeper": null
+    },
+    {
+      "name": "e",
+      "firstKeeper": {
+        "id": 111,
+        "name": "first keeper [e]",
+        "round": 7,
+        "penalty": 9
+      },
+      "secondKeeper": {
+        "id": 3,
+        "name": "second keeper [e]",
+        "round": 9,
+        "penalty": 10
+      }
+    },
+    {
+      "name": "f",
+      "firstKeeper": {
+        "id": 7,
+        "name": "first keeper [f]",
+        "round": 5,
+        "penalty": 7
+      },
+      "secondKeeper": {
+        "id": 13,
+        "name": "second keeper [f]",
+        "round": 8,
+        "penalty": 10
+      }
+    },
+    {
+      "name": "g",
+      "firstKeeper": {
+        "id": 16,
+        "name": "first keeper [g]",
+        "round": 1,
+        "penalty": 3
+      },
+      "secondKeeper": {
+        "id": 32,
+        "name": "second keeper [g]",
+        "round": 8,
+        "penalty": null
+      }
+    },
+    {
+      "name": "h",
+      "firstKeeper": {
+        "id": 199,
+        "name": "first keeper [h]",
+        "round": 2,
+        "penalty": 4
+      },
+      "secondKeeper": {
+        "id": 19,
+        "name": "second keeper [h]",
+        "round": 10,
+        "penalty": null
+      }
+    },
+    {
+      "name": "i",
+      "firstKeeper": {
+        "id": 20,
+        "name": "first keeper [i]",
+        "round": 9,
+        "penalty": null
+      },
+      "secondKeeper": {
+        "id": 30,
+        "name": "second keeper [i]",
+        "round": 8,
+        "penalty": 10
+      }
+    },
+    {
+      "name": "j",
+      "firstKeeper": {
+        "id": 22,
+        "name": "first keeper [j]",
+        "round": 5,
+        "penalty": 7
+      },
+      "secondKeeper": {
+        "id": 33,
+        "name": "second keeper [j]",
+        "round": 6,
+        "penalty": 8
+      }
+    },
+    {
+      "name": "k",
+      "firstKeeper": {
+        "id": 21,
+        "name": "first keeper [k]",
+        "round": 10,
+        "penalty": null
+      },
+      "secondKeeper": null
+    },
+    {
+      "name": "l",
+      "firstKeeper": null,
+      "secondKeeper": null
+    }
+  ]
+}

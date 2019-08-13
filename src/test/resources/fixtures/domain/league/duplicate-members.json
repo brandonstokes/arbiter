@@ -1,0 +1,7 @@
+{
+  "rounds": 1,
+  "members": [
+    {"name": "member", "firstKeeper": null, "secondKeeper": null},
+    {"name": "member", "firstKeeper": null, "secondKeeper": null}
+  ]
+}

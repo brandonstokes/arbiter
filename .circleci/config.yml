@@ -1,0 +1,65 @@
+version: 2
+
+jobs:
+  checkout:
+    docker:
+      - image: circleci/openjdk:11.0.3-jdk-stretch
+    steps:
+      - checkout
+      - restore_cache:
+          key: gradle-wrapper-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
+      - restore_cache:
+          key: gradle-cache-{{ checksum "build.gradle.kts" }}
+      - save_cache:
+          key: project-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/project
+      - run: ./gradlew download
+      - save_cache:
+          key: gradle-wrapper-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
+          paths:
+            - ~/.gradle/wrapper
+      - save_cache:
+          key: gradle-cache-{{ checksum "build.gradle.kts" }}
+          paths:
+            - ~/.gradle/caches
+
+  ktlint:
+    docker:
+      - image: circleci/openjdk:11.0.3-jdk-stretch
+    steps:
+      - restore_cache:
+          key: project-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: gradle-wrapper-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
+      - restore_cache:
+          key: gradle-cache-{{ checksum "build.gradle.kts" }}
+      - run: ./gradlew ktlintCheck
+
+  test:
+    docker:
+      - image: circleci/openjdk:11.0.3-jdk-stretch
+    steps:
+      - restore_cache:
+          key: project-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: gradle-wrapper-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
+      - restore_cache:
+          key: gradle-cache-{{ checksum "build.gradle.kts" }}
+      - run: ./gradlew test jacocoTestReport
+      - run: bash <(curl -s https://codecov.io/bash)
+
+workflows:
+  version: 2
+  arbiterflow:
+    jobs:
+      - checkout:
+          filters:
+            branches:
+              only: master
+      - ktlint:
+          requires:
+            - checkout
+      - test:
+          requires:
+            - checkout
