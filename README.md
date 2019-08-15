@@ -1,9 +1,10 @@
 [![CircleCI](https://circleci.com/gh/brandonstokes/arbiter/tree/master.svg?style=shield)](https://circleci.com/gh/brandonstokes/arbiter/tree/master)
+![Heroku](http://heroku-badge.herokuapp.com/?app=axiom-arbiter&style=flat&svg=1)
 [![codecov](https://codecov.io/gh/brandonstokes/arbiter/branch/master/graph/badge.svg)](https://codecov.io/gh/brandonstokes/arbiter)
 
 ## arbiter
-api to determine a draft board based off of a list of members with keepers
 
+Re-orders list of members based off of when a player was kept and their penalties.
 
 #### request validation (*on deserialize*)
 + __does not allow duplicate member names__
