@@ -14,11 +14,6 @@ Re-orders list of members based off of when a player was kept and their penaltie
 
 
 #### using the application
-  + define application basic auth
-    ```shell script
-    export ARBITER_USERNAME=user
-    export ARBITER_PASSWORD=password
-    ```
   + start: `./gradlew bootrun`
     - -> __GET__ `http://localhost:8080/draft/players`
     - -> __POST__ `http://localhost:8080/draft/arbitrate`
@@ -37,3 +32,5 @@ Re-orders list of members based off of when a player was kept and their penaltie
     `./gradlew bootrun`
   + navigate:
     `http://localhost:8080/swagger-ui.html`
+
+<small>https://axiom-arbiter.herokuapp.com/swagger-ui.html</small>

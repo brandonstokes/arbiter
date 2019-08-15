@@ -2,7 +2,3 @@ spring:
   output:
     ansi:
       enabled: always
-  security:
-    user:
-      name: ${ARBITER_USERNAME}
-      password: ${ARBITER_PASSWORD}
