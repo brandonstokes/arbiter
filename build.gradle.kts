@@ -75,4 +75,5 @@ tasks.jacocoTestReport {
     }
 }
 
-tasks.build.get().dependsOn(tasks.ktlintFormat, tasks.ktlintCheck)
+tasks.ktlintMainSourceSetCheck.get().dependsOn(tasks.ktlintFormat)
+tasks.build.get().dependsOn(tasks.ktlintCheck)

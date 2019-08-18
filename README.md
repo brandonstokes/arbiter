@@ -1,5 +1,5 @@
 [![CircleCI](https://circleci.com/gh/brandonstokes/arbiter/tree/master.svg?style=shield)](https://circleci.com/gh/brandonstokes/arbiter/tree/master)
-![Heroku](http://heroku-badge.herokuapp.com/?app=axiom-arbiter&style=flat&svg=1)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=axiom-arbiter&style=flat&svg=1)](https://axiom-arbiter.herokuapp.com/swagger-ui.html)
 [![codecov](https://codecov.io/gh/brandonstokes/arbiter/branch/master/graph/badge.svg)](https://codecov.io/gh/brandonstokes/arbiter)
 
 ## arbiter
@@ -32,5 +32,3 @@ Re-orders list of members based off of when a player was kept and their penaltie
     `./gradlew bootrun`
   + navigate:
     `http://localhost:8080/swagger-ui.html`
-
-<small>https://axiom-arbiter.herokuapp.com/swagger-ui.html</small>
