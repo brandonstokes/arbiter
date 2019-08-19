@@ -11,7 +11,7 @@ class Round {
     fun picks(league: League, lastPosition: Int, exclusions: Boolean): List<Pick> {
         var position = lastPosition + 1
 
-        return IntRange(1, league.rounds)
+        return IntRange(1, league.totalRounds)
             .map { round ->
                 val adjusted = if (exclusions) 999 else round
                 val pick = { members: List<Member> ->

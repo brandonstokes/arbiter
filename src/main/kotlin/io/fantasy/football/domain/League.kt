@@ -5,6 +5,6 @@ import io.fantasy.football.domain.deserializer.LeagueDeserializer
 
 @JsonDeserialize(using = LeagueDeserializer::class)
 data class League(
-    val rounds: Int,
+    val totalRounds: Int,
     val members: List<Member>
 )

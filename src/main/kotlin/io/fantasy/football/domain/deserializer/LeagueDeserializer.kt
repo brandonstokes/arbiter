@@ -32,8 +32,8 @@ class LeagueDeserializer : JsonDeserializer<League>() {
         val node = p?.codec?.readTree<JsonNode>(p)
             ?: throw JsonMappingException(p, "League can not be null!")
 
-        val roundsNode = node.get("rounds")
-        if (roundsNode.isNull) throw JsonMappingException(p, "rounds can not be null!")
+        val roundsNode = node.get("totalRounds")
+        if (roundsNode.isNull) throw JsonMappingException(p, "totalRounds can not be null!")
 
         val membersNode = node.get("members")
         if (membersNode.isNull) throw JsonMappingException(p, "members can not be null!")
