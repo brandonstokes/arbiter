@@ -4,5 +4,5 @@ data class Pick(
     val member: String,
     val round: Int,
     val position: Int,
-    val pick: String? = null
+    val keeper: String? = null
 )
