@@ -1,5 +1,4 @@
 [![CircleCI](https://circleci.com/gh/brandonstokes/arbiter/tree/master.svg?style=shield)](https://circleci.com/gh/brandonstokes/arbiter/tree/master)
-[![Heroku](https://heroku-badge.herokuapp.com/?app=axiom-arbiter&style=flat&svg=1)](https://axiom-arbiter.herokuapp.com/swagger-ui.html)
 [![codecov](https://codecov.io/gh/brandonstokes/arbiter/branch/master/graph/badge.svg)](https://codecov.io/gh/brandonstokes/arbiter)
 
 ## arbiter
