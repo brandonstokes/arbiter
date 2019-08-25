@@ -44,6 +44,21 @@ class MemberDeserializerTest {
         )
     }
 
+    @Test
+    fun `deserialize and reset second keeper penalty when its penalty equals first keeper round`() {
+        assertEquals(
+            Member(
+                "a",
+                Keeper(1, "aa", 11),
+                Keeper(2, "bb", 9, 10)
+            ),
+            mapper.readValue(
+                from("second-keeper-penalty-conflicts-with-first-keeper-round.json"),
+                Member::class.java
+            )
+        )
+    }
+
     @Test(expected = JsonMappingException::class)
     fun `throws JsonMappingException when Member is null`() {
         mapper.readValue("", Member::class.java)

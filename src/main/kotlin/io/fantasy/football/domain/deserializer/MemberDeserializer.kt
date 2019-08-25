@@ -32,7 +32,9 @@ class MemberDeserializer : JsonDeserializer<Member>() {
                 return if (first == null && second != null)
                     throw JsonMappingException(p, "First keeper cannot be null if second keeper is set!")
                 else if (second != null && first.penalty == second.round)
-                    Member(name, first, second.copy(round = first.penalty.minus(1)))
+                    Member(name, first, second.copy(round = second.round.minus(1)))
+                else if (second != null && first.round == second.penalty)
+                    Member(name, first, second.copy(penalty = second.penalty.minus(1)))
                 else
                     Member(name, first, second)
             }
