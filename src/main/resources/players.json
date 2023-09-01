@@ -940,19 +940,14 @@
     "position": "WR"
   },
   {
-    "id": 189,
-    "name": "Trey Burton",
-    "position": "TE"
-  },
-  {
     "id": 190,
-    "name": "Marqise Lee",
-    "position": "WR"
+    "name": "Kenneth Walker III",
+    "position": "RB"
   },
   {
     "id": 191,
-    "name": "Andy Isabella",
-    "position": "WR"
+    "name": "Trevor Lawrence",
+    "position": "QB"
   },
   {
     "id": 192,
@@ -966,37 +961,37 @@
   },
   {
     "id": 194,
-    "name": "Paul Richardson",
+    "name": "AJ Brown",
     "position": "WR"
   },
   {
     "id": 195,
-    "name": "DeVante Parker",
+    "name": "Cooper Kupp",
     "position": "WR"
   },
   {
     "id": 196,
-    "name": "Dallas Goedert",
-    "position": "TE"
+    "name": "Garret Wilson",
+    "position": "WR"
   },
   {
     "id": 197,
-    "name": "Darwin Thompson",
-    "position": "RB"
-  },
-  {
-    "id": 198,
-    "name": "Frank Gore",
-    "position": "RB"
-  },
-  {
-    "id": 199,
-    "name": "Tom Brady",
+    "name": "Jalen Hurts",
     "position": "QB"
   },
   {
-    "id": 200,
-    "name": "Randall Cobb",
+    "id": 198,
+    "name": "Jamaar Chase",
     "position": "WR"
+  },
+  {
+    "id": 199,
+    "name": "Rachaad White",
+    "position": "RB"
+  },
+  {
+    "id": 200,
+    "name": "Tony Pollard",
+    "position": "RB"
   }
 ]
